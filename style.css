@@ -1,3 +1,8 @@
+body {
+margin:0;  
+}  
+
+
 #topbar {
 border-style:solid;
 border-color:lightgrey;
