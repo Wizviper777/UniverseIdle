@@ -1,9 +1,3 @@
-html {
- height:100%;
- width:100%;
-}  
-
-
 #topbar {
 border-style:solid;
 border-color:lightgrey;
@@ -11,9 +5,11 @@ border-width:2%;
 }
 
 #asteroidHub {
+position:absolute;
 border-style:solid;
 border-color:lightgrey;
 border-width:2%;
+height:80%;
 }
 
 #asteroidScene {
