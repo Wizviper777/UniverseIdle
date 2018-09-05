@@ -1,5 +1,10 @@
+html {
+height:100%;  
+}  
+
+
 body {
-margin:0;  
+height:100%;
 }  
 
 
@@ -13,7 +18,7 @@ border-width:2%;
 border-style:solid;
 border-color:lightgrey;
 border-width:2%;
-height:80vh;
+height:80%;
 }
 
 #asteroidScene {
