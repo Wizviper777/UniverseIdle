@@ -10,9 +10,9 @@ margin:0;
 
 
 #topbar {
-border-style:solid;
-border-color:lightgrey;
-border-width:2%;
+border-bottom-style:solid;
+border-bottom-color:lightgrey;
+border-bottom-width:2%;
 height:10%;
 }
 
