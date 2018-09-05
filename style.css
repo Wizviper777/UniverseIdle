@@ -22,6 +22,13 @@ border-width:2%;
 height:80%;
 }
 
+#asteroidResources {
+border-style:solid;
+border-color:lightgrey;
+border-width:2%;  
+  
+}
+
 #asteroidScene {
 
 
