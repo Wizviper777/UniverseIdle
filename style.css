@@ -1,38 +1,113 @@
-html {
-height:100%;  
-width:100%;
-}  
-
-
 body {
-height:100%;
-width:100%;
-margin:0;
-}  
+    height:100vh;
+    width:100vw;
+    box-sizing:border-box;
+    background-color:#f9fbfc;
+}
+
+
+.container-fluid {
+    padding:0px;
+    margin:0px;
+}
+
+.container {
+    padding:0px;
+}
+
+.row{
+    margin:0px;
+    padding:0px;
+}
 
 
 #topbar {
-border-bottom-style:solid;
-border-bottom-color:lightgrey;
-border-bottom-width:2%;
+    border-bottom-color: black;
+    border-bottom-style:solid;
+    border-bottom-width:2px;
+    height:7vh;
 }
 
-#asteroidHub {
-border-style:solid;
-border-color:lightgrey;
-border-width:2%;
-height:80%;
+
+
+#space-hub {
+  height:86vh;
+  display:none;
 }
 
-#asteroidResources {
-border-style:solid;
-border-color:lightgrey;
-border-width:2%;  
-width:30%;
-height:80%;
+#science-hub {
+  height:86vh;
+  display:none;
 }
 
-#asteroidScene {
-
-
+#planet-exploration {
+border-left: black solid 2px;
+height:86vh;
 }
+#asteroid-resources {
+    border-right-color: black;
+    border-right-style:solid;
+    border-right-width:2px;
+    height:86vh;
+}
+
+#asteroid-buildings {
+    
+}
+
+#asteroid-upgrades {
+    border-left: black 2px solid;
+    margin:0px;
+}
+
+.bldg {
+    margin-top:5px;
+    width:19.5%;
+    
+}
+
+#bottombar {
+    border-top: solid 2px black;
+}
+
+#power-text {
+    color:#f3cf00;
+}
+
+#heatingplantbtn {
+  display:none;
+}
+
+#aboutDiv {
+  position:fixed;
+  z-index:100;
+  margin:2.5% 2.5% 2.5% 2.5%;
+  width:95%;
+  height:90%;
+  background-color:#a1beed;
+  visibility:visible;
+}
+
+#aboutHeader {
+  text-align:center;
+  font-size:400%;
+}
+#aboutText {
+  text-align:center;
+  font-size:200%;
+}
+
+#closeAbout {
+  width:20%;
+  margin: 10% 40% auto 40%
+}
+
+#land-text {
+  color:green
+}
+
+p {
+    margin:0px;
+    padding:0px;
+}
+
