@@ -124,7 +124,7 @@ function buyBuilding(building) {
     if (ore >= refineries[3]) {
       ore = ore - refineries[3];
       refineries[0] = refineries[0] + 1;
-      refineries[3] = Math.ceil(refineries[3] * 1.15)
+      refineries[3] = Math.ceil(refineries[3] * 1.15);
       document.getElementById('refinerybtn').innerHTML = 'Refinery(' + refineries[0] + ')';
     }
   }
@@ -132,7 +132,7 @@ function buyBuilding(building) {
     if (metal >= mines[2]) {
       metal = metal - mines[2];
       mines[0] = mines[0] + 1;
-      mines[2] = Math.ceil(mines[2] * 1.15)
+      mines[2] = Math.ceil(mines[2] * 1.15);
       document.getElementById('minebtn').innerHTML = 'Mine(' + mines[0] + ')';
     }
   }
@@ -140,7 +140,7 @@ function buyBuilding(building) {
     if (metal >= panels[2]) {
       metal = metal - panels[2];
       panels[0] = panels[0] + 1;
-      panels[2] = Math.ceil(panels[2] * 1.15)
+      panels[2] = Math.ceil(panels[2] * 1.15);
       document.getElementById('panelbtn').innerHTML = 'Panel(' + panels[0] + ')';
     }
   }
@@ -148,7 +148,7 @@ function buyBuilding(building) {
     if (metal >= pumpjacks[2]) {
       metal = metal - pumpjacks[2];
       pumpjacks[0] = pumpjacks[0] + 1;
-      pumpjacks[2] = Math.ceil(pumpjacks[2] * 1.15)
+      pumpjacks[2] = Math.ceil(pumpjacks[2] * 1.15);
       document.getElementById('pumpjackbtn').innerHTML = 'Pumpjack(' + pumpjacks[0] + ')';
     }
   }
@@ -156,7 +156,7 @@ function buyBuilding(building) {
     if (metal >= generators[3]) {
       metal = metal - generators[3];
       generators[0] = generators[0] + 1;
-      generators[3] = Math.ceil(generators[3] * 1.15)
+      generators[3] = Math.ceil(generators[3] * 1.15);
       document.getElementById('generatorbtn').innerHTML = 'Generator(' + generators[0] + ')';
     }
   }
