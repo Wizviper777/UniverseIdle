@@ -1,6 +1,3 @@
-// Import stylesheets
-import './style.css';
-
 //Define Resources
 $('#aboutDiv').hide();
 var ore = 10000;
