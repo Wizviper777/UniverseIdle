@@ -1,5 +1,4 @@
 //Define Resources
-$('#aboutDiv').hide();
 var ore = 10000;
 var oreText = document.getElementById('oreCount');
 var metal = 10000;
