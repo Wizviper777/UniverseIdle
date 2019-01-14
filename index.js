@@ -1,3 +1,4 @@
+window.onload = function() {
 //Define Resources
 var ore = 10000;
 var oreText = document.getElementById('oreCount');
@@ -187,4 +188,4 @@ function launchRockets() {
 function showAbout() {
   $('#aboutDiv').toggle();
 }
-
+}
