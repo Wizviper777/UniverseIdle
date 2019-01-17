@@ -1,6 +1,4 @@
 window.onload = function() {
-// Import stylesheets
-import './style.css';
 
 //Define Resources
 $('#aboutDiv').hide();
