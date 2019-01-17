@@ -5,6 +5,10 @@ body {
     background-color:#f9fbfc;
 }
 
+p {
+    margin:0px;
+    padding:0px;
+}
 
 .container-fluid {
     padding:0px;
@@ -20,6 +24,34 @@ body {
     padding:0px;
 }
 
+.bldg {
+    margin-top:5px;
+    margin-left:0.5px;
+    width:19.5%;   
+}
+
+.logtext {
+  border-bottom: gainsboro 1px solid;
+  background-color:ivory;
+}
+
+.planetbtn {
+  width:49%;
+  margin-top:5px;
+}
+
+#tooltipbox {
+  position:fixed;
+  width:20vw;
+  height:15vh;
+  background-color:ivory;
+  border-top:gainsboro solid 1px;
+  border-bottom:gainsboro solid 1px;
+  border-left:gainsboro solid 1px;
+  border-right:gainsboro solid 1px;
+  z-index:999;
+  display:none;
+}
 
 #topbar {
     border-bottom-color: black;
@@ -28,14 +60,55 @@ body {
     height:7vh;
 }
 
+#asteroid-resources {
+    border-right-color: black;
+    border-right-style:solid;
+    border-right-width:2px;
+    height:86vh;
+}
 
-
-#space-hub {
-  height:86vh;
+#oilCount {
   display:none;
 }
 
-#science-hub {
+#chromiumCount {
+  display:none;
+}
+
+#waterCount {
+  display:none;
+}
+
+#biomassCount {
+  display:none;
+}
+
+#oxygenCount {
+  display:none;
+}
+
+#sandCount {
+  display:none;
+}
+
+#quartzCount {
+  display:none;
+}
+
+#land-text {
+  display:none;
+}
+
+#science-text {
+  display:none;
+}
+
+#asteroid-upgrades {
+    border-left: black 2px solid;
+    margin:0px;
+}
+
+#space-hub {
   height:86vh;
   display:none;
 }
@@ -44,38 +117,94 @@ body {
 border-left: black solid 2px;
 height:86vh;
 }
-#asteroid-resources {
-    border-right-color: black;
-    border-right-style:solid;
-    border-right-width:2px;
-    height:86vh;
+
+#desertplanetExploration {
+  display:none;
 }
 
-#asteroid-buildings {
-    
+#quartzplanetExploration {
+  display:none;
 }
 
-#asteroid-upgrades {
-    border-left: black 2px solid;
-    margin:0px;
+#science-hub {
+  height:86vh;
+  display:none;
 }
 
-.bldg {
-    margin-top:5px;
-    width:19.5%;
-    
+#science-tree {
+  height:86vh;
+  border-right: black solid 2px;
 }
 
-#bottombar {
-    border-top: solid 2px black;
+#tech-tree {
+  height:86vh;
 }
 
 #power-text {
     color:#f3cf00;
 }
 
+#land-text {
+  color:green
+}
+
+#science-text {
+  color:aqua;
+}
+
+#pumpjackbtn {
+  display:none;
+}
+
+#generatorbtn {
+  display:none;
+}
+
+#castingfurnacebtn {
+  display:none;
+}
+
 #heatingplantbtn {
   display:none;
+}
+
+#rocketbtn {
+  display:none;
+}
+
+#launchrocketbtn {
+  display:none;
+}
+
+#satellitebtn {
+  display:none;
+}
+
+#biofarmbtn {
+  display:none;
+}
+
+#terrariumbtn {
+  display:none;
+}
+
+#sandshovelerbtn {
+  display:none;
+}
+
+#quartzdrillbtn {
+  display:none;
+}
+
+#log-hub {
+  display:none;
+  height:86vh;
+  overflow:scroll;
+}
+
+#bottombar {
+    border-top: solid 2px black;
+    height:7vh;
 }
 
 #aboutDiv {
@@ -101,13 +230,3 @@ height:86vh;
   width:20%;
   margin: 10% 40% auto 40%
 }
-
-#land-text {
-  color:green
-}
-
-p {
-    margin:0px;
-    padding:0px;
-}
-
