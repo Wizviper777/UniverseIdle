@@ -2,6 +2,9 @@
 <html>
 <head>
     <title>Universe Idle</title>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -11,13 +14,18 @@
   </p>
   <button id='closeAbout' class='btn btn-primary'>Exit</button>
 </div>
+
+<div id='tooltipbox'>
+  <p id='tooltiptext'>Yeet</p>
+</div>
+
 <div id='topbar' class='container-fluid btn-group'>
     <button class='btn btn-default col-sm-2' id='asteroidbtn'>Asteroid</button>
-    <button class='btn btn-default col-sm-2' id='spacebtn'>Space</button>
-    <button class='btn btn-default col-sm-2' id='sciencebtn'>Science</button>
-    <button class='btn btn-default col-sm-2'>T.H.I.N.K</button>
-    <button class='btn btn-default col-sm-2'>Warp</button>
-    <button class='btn btn-default col-sm-2'>???</button>
+    <button class='btn btn-default col-sm-2' id='spacebtn'>???</button>
+    <button class='btn btn-default col-sm-2' id='sciencebtn'>???</button>
+    <button class='btn btn-default col-sm-2' id='THINKbtn'>???</button>
+    <button class='btn btn-default col-sm-2' id='warpbtn'>???</button>
+    <button class='btn btn-default col-sm-2' id='nanobotsbtn'>???</button>
 </div>
     
 <div class='container-fluid' id='asteroid-hub'>
@@ -27,8 +35,14 @@
         <p id='metalCount'>Metal:0</p>
         <p id='oilCount'>Oil:0</p>
         <p id='chromiumCount'>Chromium:0</p>
+        <p id='waterCount'>Water:0</p>
+        <p id='biomassCount'>Biomass:0</p>
+        <p id='oxygenCount'>Oxygen:0</p>
+        <p id='sandCount'>Sand:0</p>
+        <p id='quartzCount'>Quartz:0</p>
         <p id='power-text'><strong>Power:0</strong></p>
         <p id='land-text'>Land:30</p>
+        <p id='science-text'>Science:0</p>
     </div>
     <div class='col-sm-8 container' id='asteroid-buildings'>
         <button class='btn btn-default  bldg' id='minebtn'>Mine(2)</button>
@@ -39,6 +53,9 @@
         <button class='btn btn-default  bldg' id='castingfurnacebtn'>Casting Furnace(0)</button>
         <button class='btn btn-default  bldg' id='heatingplantbtn'>Heating Plant(0)</button>
         <button class='btn btn-default  bldg' id='biofarmbtn'>Bio Farm(0)</button>
+        <button class='btn btn-default  bldg' id='terrariumbtn'>Terrarium(0)</button>
+        <button class='btn btn-default bldg' id='sandshovelerbtn'>Sand Shoveler(0)</button>
+        <button class='btn btn-default bldg' id='quartzdrillbtn'>Quartz Drill(0)</button>
     </div>
     
     <div class='col-sm-2 container' id='asteroid-upgrades'>
@@ -50,36 +67,44 @@
   <div class='row'>
     <div class='col-sm-9 container' id='space-exploration'>
         <button class='btn btn-default bldg' id='rocketbtn'>Rocket(0)</button>
+        <button class='btn btn-default bldg' id='satellitebtn'>Satellite(0)</button>
         <button class = 'btn btn-default bldg' id='launchrocketbtn'>Launch Rockets</button>
     </div>
     <div class='col-sm-3 container' id='planet-exploration'>
-      <button class='btn btn-default' id='iceplanetExploration'>Ice Planet</button>
+      <button class='btn btn-default planetbtn' id='iceplanetExploration'>Frigian</button>
+      <button class='btn btn-default planetbtn' id='desertplanetExploration'>Calmium</button>
+      <button class='btn btn-default planetbtn' id='quartzplanetExploration'>Crysclo</button>
     </div>
   </div>
 </div>  
 
 <div class='container-fluid' id='science-hub'>
   <div class='row'>
-    <div class='col-sm-12 container' id='science-tree'>
+    <div class='col-sm-6 container' id='science-tree'>
       <button class='btn btn-default bldg' id='satelliteResearchUnlock'>Satellites</button>
+    </div>
+    <div class='col-sm-6 container' id='tech-tree'>
+      <button class='btn btn-default bldg' id='satellitePowerTech'>Solar Satellites</button>
     </div>
   </div>
 </div>  
+<div class='container-fluid' id='log-hub'>
+  <div class='row'>
+    <div class='col-sm-12 container' id='log-messages'>
+      <p class='logtext'>On a faraway asteroid, the machine powers on. After eons of blissful slumber, the AI awakens.</p>
+    </div>
+  </div>
+</div>
 <div id='bottombar' class='container-fluid btn-group'>
-    <button class='btn btn-success col-sm-2'>Save</button>
-    <button class='btn btn-warning col-sm-2'>Load</button>
-    <button class='btn btn-primary col-sm-2'>Acheivements</button>
-    <button class='btn btn-primary col-sm-2'>Challenges</button>
+    <button class='btn btn-success col-sm-2' id='savebtn'>Save</button>
+    <button class='btn btn-primary col-sm-2' id='logbtn'>Log</button>
+    <button class='btn btn-primary col-sm-2'>Achievements</button>
     <button class='btn btn-primary col-sm-2'>Statistics</button>
+    <button class='btn btn-primary col-sm-2'>Settings</button>
     <button id='aboutButton'class='btn btn-primary col-sm-2'>About</button>
 </div>
-    
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="index.js"></script>
-    
+</body>
+</html>
     
     
 </body>
